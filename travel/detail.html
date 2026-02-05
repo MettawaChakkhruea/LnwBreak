@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสถานที่ท่องเที่ยว</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 id="detailTitle">รายละเอียดสถานที่ท่องเที่ยว</h1>
+            <p class="subtitle" id="detailSubtitle">ดูรูปภาพและข้อมูลเพิ่มเติม</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="index.html" class="back-link">← กลับไปหน้ารวมสถานที่ท่องเที่ยว</a>
+
+            <section id="detailSection" class="detail-section">
+                <div class="detail-layout">
+                    <div class="detail-gallery">
+                        <div class="detail-main-image-wrapper">
+                            <img id="mainImage" src="" alt="" />
+                            <div id="mainImageFallback" class="detail-main-fallback">📷</div>
+                        </div>
+                        <div id="thumbnailList" class="detail-thumbnails">
+                            <!-- thumbnails inserted here -->
+                        </div>
+                    </div>
+                    <div class="detail-info">
+                        <h2 id="placeName"></h2>
+                        <p id="placeLocation" class="detail-location"></p>
+                        <p id="placeDescription" class="detail-description"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="notFoundSection" class="detail-not-found">
+                <p>ไม่พบสถานที่ท่องเที่ยวที่คุณต้องการดู</p>
+                <a href="index.html" class="back-link">กลับไปหน้ารวมสถานที่ท่องเที่ยว</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 สถานที่ท่องเที่ยว. สร้างด้วย ❤️</p>
+        </div>
+    </footer>
+
+    <script src="detail.js"></script>
+</body>
+</html>
+
